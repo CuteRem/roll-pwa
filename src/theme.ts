@@ -2,8 +2,8 @@ import { extendTheme, type ThemeConfig } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 
 const config: ThemeConfig = {
-  initialColorMode: 'system',
-  useSystemColorMode: true,
+  initialColorMode: 'light',
+  useSystemColorMode: false,
 };
 
 const theme = extendTheme({
@@ -25,8 +25,8 @@ const theme = extendTheme({
   styles: {
     global: (props: any) => ({
       'body': {
-        bg: mode('gray.50', 'gray.900')(props),
-        color: mode('gray.800', 'whiteAlpha.900')(props),
+        bg: 'gray.50',
+        color: 'gray.800',
         lineHeight: 'base',
       },
     }),
