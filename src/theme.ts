@@ -1,5 +1,5 @@
+// src/theme.ts
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools';
 
 const config: ThemeConfig = {
   initialColorMode: 'light',
@@ -23,13 +23,13 @@ const theme = extendTheme({
     },
   },
   styles: {
-    global: (props: any) => ({
-      'body': {
+    global: {
+      body: {
         bg: 'gray.50',
         color: 'gray.800',
         lineHeight: 'base',
       },
-    }),
+    },
   },
 });
 
